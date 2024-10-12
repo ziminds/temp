@@ -40,3 +40,29 @@ python -m resume-evaluator.src.main
 ```
 
 The application should now be running. Open your web browser and navigate to the address displayed in the console (typically `http://127.0.0.1:7860`) to access the Resume Evaluator.
+
+
+## using Docker
+
+
+## Prerequisites
+
+* docker 
+
+## Steps 
+
+1. build the docker image 
+
+```
+cd resume-evaluator
+docker build -t resume-evaluator .
+```
+
+2. run the container with port mapping:
+
+```
+docker run -p 8080:7860 resume-evaluator
+```
+
+3. you should be able to access the web app via `http://localhost:8080/` 
+
